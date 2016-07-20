@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OrderSystem</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_food_detail">FoodDetailActivity</string>
+    <string name="tv_edit_ttf">&#xe609;</string>
+    <string name="tv_phone_call_ttf">&#xe63f;</string>
+    <string name="tv_phone_ttf">&#xe613;</string>
+    <string name="tv_next_ttf">&#xe63d;</string>
+    <string name="tv_done_order_ttf">&#xe60b;</string>
+    <string name="tv_undone_order_ttf">&#xe60c;</string>
+    <string name="tv_history_ttf">&#xe65c;</string>
+    <string name="tv_account_ttf">&#xe62f;</string>
+    <string name="tv_password_ttf">&#xe674;</string>
+    <string name="tv_change_image_ttf">&#xe664;</string>
+    <string name="aboutus">开发者：       NewOrin/Debug\n
+        联系方式：     NewOrin/875699796\n
+                \t\t\t\t\t\t\t\t\t\t\tDebug/807648567\n\n
+    如果大家对我们的项目有什么需要改进的地方，请给我们提出你们宝贵的意见我们一定改正，你们可以QQ联系我们，也可以给我们发邮件，谢谢</string>
+</resources>

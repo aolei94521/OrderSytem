@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22ffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aolei.jxustnc.ordersystem.activity.FoodDetailActivity"
+    tools:showIn="@layout/activity_food_detail">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/food_layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_price_item_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥ 120元"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_large"
+                app:layout_marginLeftPercent="3%" />
+
+            <Button
+                android:id="@+id/btn_buy_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="立即购买"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_marginBottomPercent="3%"
+                app:layout_marginRightPercent="3%"
+                app:layout_marginTopPercent="3%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/food_layout_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_layout_price"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="商家信息"
+                    android:textSize="16sp"
+                    app:layout_marginBottomPercent="3%"
+                    app:layout_marginLeftPercent="3%"
+                    app:layout_marginTopPercent="3%" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/food_layout_canteen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="5"
+                    android:background="@drawable/item_layout_selector"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        app:layout_marginLeftPercent="3%">
+
+                        <TextView
+                            android:id="@+id/tv_shop_item_food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="蒸鲜食包"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <TextView
+                            android:id="@+id/tv_canteen_item_food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="江西理工大学第一食堂"
+                            android:textSize="@dimen/text_size_medium" />
+                    </LinearLayout>
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/food_layout_call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_layout_selector"
+                    android:clickable="true">
+                    <TextView
+                        android:id="@+id/tv_ic_edit_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="0dp"
+                        android:text="@string/tv_edit_ttf"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_large"
+                        app:layout_marginRightPercent="3%" />
+                    <TextView
+                        android:id="@+id/tv_ic_phone_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="0dp"
+                        android:text="@string/tv_phone_call_ttf"
+                        android:textSize="@dimen/text_size_large"
+                        app:layout_marginRightPercent="3%" />
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/food_layout_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_layout_shop"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_food_com_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_marginLeftPercent="3%" />
+
+            <TextView
+                android:id="@+id/tv_sold_item_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                app:layout_marginRightPercent="3%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/food_detail_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_layout_comment"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <LinearLayout
+            android:id="@+id/comment_layout"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/food_layout_comment"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/ic_food_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="暂无评论"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+</android.support.v4.widget.NestedScrollView>

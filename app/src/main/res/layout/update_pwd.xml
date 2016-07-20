@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="旧密码"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_medium" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_new_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_medium" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_new_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="确认新密码"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_medium" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_main"
+            android:title="主页"/>
+        <item
+            android:id="@+id/nav_canteen1"
+            android:icon="@drawable/ic_menu_canteen"
+            android:title="第一食堂"/>
+        <item
+            android:id="@+id/nav_canteen2"
+            android:icon="@drawable/ic_menu_canteen"
+            android:title="第二食堂"/>
+        <item
+            android:id="@+id/nav_canteen3"
+            android:icon="@drawable/ic_menu_canteen"
+            android:title="第三食堂"/>
+        <item
+            android:id="@+id/nav_purchase"
+            android:icon="@drawable/ic_menu_order"
+            android:title="我的购买"/>
+        <item
+            android:icon="@drawable/ic_about_us"
+            android:id="@+id/aboutus"
+            android:title="关于我们"
+            />
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="退出登录"/>
+
+    </group>
+</menu>
